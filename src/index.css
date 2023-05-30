@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #090808;
+  color: #f8edeb;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.container {
+  height: 100%;
+  margin: 3rem 1rem;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#greeting{
+  height: 100vh;
+  justify-content: space-around;
+  margin: 0 1rem;
+}
+.next-btn {
+  user-select: none;
+  background-color: #c20114;
+  color: #f8edeb;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  /* transition: background-color 0.3s ease-in-out; */
+
+}
+
+.next-btn:hover {
+  background-color: #f8edeb;
+  color: #090808;
+}
+.next-btn:active {
+  background-color: #c20114;
+  color: #f8edeb;
+}
+.round-image{
+  display: block;
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 2.5rem rgb(119, 69, 167);
+}
+
+h2,
+h1{
+  margin: 0;
+}
+
+h2{
+  color: #ecf39e;
+}
+ul > li{
+  margin: 0;
+}
+
+img{
+  /* width: 300px; */
+  max-width: 100%;
+}
+
+.memory, canvas{
+  margin: 0;
+}
+canvas{
+  max-width: 100%;
+}
+
+h3 span{
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.image-container{
+  max-width: 400px;
+  gap: 1.5rem;
+}
+@media (max-width: 400px) {
+  .next-btn {
+    width: 100%;
+  }
+}
